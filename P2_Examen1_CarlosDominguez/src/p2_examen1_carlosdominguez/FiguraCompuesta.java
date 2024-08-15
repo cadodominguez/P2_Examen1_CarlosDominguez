@@ -13,10 +13,37 @@ import java.util.ArrayList;
 class FiguraCompuesta extends Figura {
     private ArrayList<Figura> figuras = new ArrayList<>();
     
-    
+    protected void agregarFigura (Figura figura){
+        figuras.add(figura);
+    }
     @Override
     double calcularArea() {
-        
+        double area = 0;
+        for (int i = 0; i < figuras.size(); i++) {
+            Figura actual = figuras.get(i);
+            if (actual instanceof Circulo) {
+                area += 3.1416*(((Circulo) actual).getRadio()*((Circulo) actual).getRadio());
+            }else if (actual instanceof Cuadrado) {
+                area += ((Cuadrado) actual).getLado()*((Cuadrado) actual).getLado();
+            }else if (actual instanceof FiguraCompuesta) {
+                area += actual.calcularArea();
+            }
+        }
+        return area;
     }
+    
+    public String salida (){
+        String s = "";
+        for (int i = 0; i < figuras.size(); i++) {
+            s += figuras.get(i).toString()+"\n";
+        }
+        return s;
+    }
+    
+    @Override
+    public String toString() {
+        return "FiguraCompuesta:\n" + "->" + salida();
+    }
+    
     
 }

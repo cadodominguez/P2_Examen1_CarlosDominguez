@@ -11,10 +11,19 @@ public class Circulo extends Figura{
     public Circulo(double radio) {
         this.radio = radio;
     }
-
+    
     @Override
     double calcularArea() {
        return 3.1416*(radio*radio);
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    @Override
+    public String toString() {
+        return "Circulo(" + "R=" + radio + ')';
     }
     
 }

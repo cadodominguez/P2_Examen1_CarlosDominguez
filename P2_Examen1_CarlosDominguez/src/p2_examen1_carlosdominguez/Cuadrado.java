@@ -15,9 +15,19 @@ class Cuadrado extends Figura{
         this.lado = lado;
     }
 
-
+    
     @Override
     double calcularArea() {
         return lado * lado;
     }
+
+    public double getLado() {
+        return lado;
+    }
+
+    @Override
+    public String toString() {
+        return "Cuadrado(" + "L=" + lado + ')';
+    }
+    
 }
