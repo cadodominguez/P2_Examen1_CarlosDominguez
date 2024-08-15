@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package p2_examen1_nombreapellido;
+package p2_examen1_carlosdominguez;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author claudiacortes
  */
-public class P2_Examen1_NombreApellido {
+public class P2_Examen1_CarlosDominguez {
 
     /**
      * @param args the command line arguments

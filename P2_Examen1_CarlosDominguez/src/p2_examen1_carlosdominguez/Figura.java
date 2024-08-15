@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package p2_examen1_nombreapellido;
+package p2_examen1_carlosdominguez;
 
 /**
  *
@@ -11,7 +11,7 @@ package p2_examen1_nombreapellido;
 abstract class Figura {
     /*NOTA: esta clase no necesita ningun atributo
     El método calcularArea DEBE ser abstracto*/
-    abstract double calcularArea() { return 1*0.5};
+    abstract double calcularArea();
 
     @Override
     public String toString() {
